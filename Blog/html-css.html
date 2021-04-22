@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link href="../Styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -13,13 +13,13 @@
         <nav>
               <ul class="ul-nav">     
                 <li class="li-nav">
-                    <a href="index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li class="li-nav">
-                    <a href="my-blog.html">My Blog</a>
+                    <a href="../my-blog.html">My Blog</a>
                 </li>
                 <li class="li-nav">
-                    <a href="about-me.html">About Me</a>
+                    <a href="../about-me.html">About Me</a>
                 </li>
             </ul>
         </nav>
@@ -32,11 +32,11 @@
           <h1>Basically, all HTML elements can be considered as boxes.</h2>
           <p>
               And when it comes to styling these boxes and how they appear on the page, 
-              we can apply CSS to essentially wraps around each and every HTML element. 
+              we can apply CSS to essentially wrap around each and every HTML element. 
               This wrapping consists of: margins, borders, padding, and the actual content itself. 
               Take a look below for an overview of what I'm saying.
           </p>
-          <img src="../Images/box-model.png" alt="box model diagram" id="box-model">
+          <img src="../images/box-model.png" alt="box model diagram" id="box-model">
           <ul>
             <li>Content - Where text and images appear.</li>
             <li>Padding - Clears a transparent area around the content.</li>
@@ -77,7 +77,16 @@
           <p>Margins are the outer layer of an element, outside of any defined borders, and can be used to create space between neighbouring elements. The greater the margin, the greater the distance between elements.
            <br>
            <br>
-           The same happens in reverse. If the margin is negative, you can start to overlap elements. Below are some examples of margins in action.
+           The same happens in reverse. If the margin is negative, you can start to overlap elements. Below are some examples of margins in action. 
+           <br>
+           <br>
+           As we can see in Box #1, it has 20px applied to the left margin, hence moving it 20px away from the left hand side of the screen. 
+           <br>
+           <br>
+           With Box #2, it has 40px appled to the top margin, moving it down from the top of the screen, and -20px applied to the left margin, hence overlaying it over Box #1. 
+           <br>
+           <br>
+           Box #3 has 15px and 30px applied to the left and bottom margin respectively, moving it away to the right and slightly higher than the other two boxes.
           </p>
           <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="carter-bardellmunro" data-slug-hash="WNRYaje" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="margin">
             <span>See the Pen <a href="https://codepen.io/carter-bardellmunro/pen/WNRYaje">
