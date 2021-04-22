@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carter's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="../Styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+        <nav>
+              <ul class="ul-nav">     
+                <li class="li-nav">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="li-nav">
+                    <a href="my-blog.html">My Blog</a>
+                </li>
+                <li class="li-nav">
+                    <a href="about-me.html">About Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="article-body">
+        <h1 class="header-text">Margins, Borders, & Padding: What's the Difference?</h1>
+    </section>
+    <section class="article-body">
+        <div class="article-text">
+          <h1>Basically, all HTML elements can be considered as boxes.</h2>
+          <p>
+              And when it comes to styling these boxes and how they appear on the page, 
+              we can apply CSS to essentially wraps around each and every HTML element. 
+              This wrapping consists of: margins, borders, padding, and the actual content itself. 
+              Take a look below for an overview of what I'm saying.
+          </p>
+          <img src="../Images/box-model.png" alt="box model diagram" id="box-model">
+          <ul>
+            <li>Content - Where text and images appear.</li>
+            <li>Padding - Clears a transparent area around the content.</li>
+            <li>Border - A border that goes around the padding and content.</li>
+            <li>Margin - Clears a transparent area outside the border.</li>
+          </ul>
+          <h1>Padding</h1>
+          <p> Let’s start with padding. Padding is a property that can be used to create transparent space around an elements content. It can be applied to all four sides of the element, or just specific sides. Below are examples of how you can apply padding to an element:</p>
+          <ul>
+              <li>padding: 10px; (will apply to all sides evenly)</li>
+              <li>padding: 10px 20px 30px 40px; (will apply each value clockwise to the element. 10px to the top, 20px to the right, 30px to the bottom, and 40px to the left)</li>
+              <li>padding: 10px 20px; (will apply 10px to the top and bottom and 20px to the left and right)</li>
+          </ul>
+          <p>In the example below, you can see that the two boxes each have different padding applied to them. One has 20px applied around the entire element, and one has 30px applied to the top and bottom and 40px to the right and left.</p>
+          <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="carter-bardellmunro" data-slug-hash="PoWxBqw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="padding">
+            <span>See the Pen <a href="https://codepen.io/carter-bardellmunro/pen/PoWxBqw">
+            padding</a> by carter-bardellmunro (<a href="https://codepen.io/carter-bardellmunro">@carter-bardellmunro</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <h1>Border</h1>
+          <p>Borders are where you can get slightly more creative! By using borders, the user can decide the style, width, and colour of the border around a certain element.</p>
+          <p>Just like padding, a border can wrap around the entire element, or just certain sides. Below are some examples of how you can apply a border:</p>
+          <ul>
+              <li>border-style: solid; (will apply all for sides a solid border)</li>
+              <li>border-style: solid dashed; (top and bottom borders are solid, right and left are dashed)</li>
+              <li>border-style: solid dashed dotted; (top is solid, right and left are dashed, and bottom is dotted)</li>
+              <li>Border-style: solid dashed dotted double; (you guessed it; top is solid, right is dashed, bottom is dotted, and left is double)</li>
+          </ul>
+          <p>Below you can see three borders that have had different styles applied to them.</p>
+          <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="carter-bardellmunro" data-slug-hash="BapGrBo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="BapGrBo">
+            <span>See the Pen <a href="https://codepen.io/carter-bardellmunro/pen/BapGrBo">
+            BapGrBo</a> by carter-bardellmunro (<a href="https://codepen.io/carter-bardellmunro">@carter-bardellmunro</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <h1>Margins</h1>
+          <p>Margins are the outer layer of an element, outside of any defined borders, and can be used to create space between neighbouring elements. The greater the margin, the greater the distance between elements.
+           <br>
+           <br>
+           The same happens in reverse. If the margin is negative, you can start to overlap elements. Below are some examples of margins in action.
+          </p>
+          <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="carter-bardellmunro" data-slug-hash="WNRYaje" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="margin">
+            <span>See the Pen <a href="https://codepen.io/carter-bardellmunro/pen/WNRYaje">
+            margin</a> by carter-bardellmunro (<a href="https://codepen.io/carter-bardellmunro">@carter-bardellmunro</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+    </section>
+</body>
+</html>
