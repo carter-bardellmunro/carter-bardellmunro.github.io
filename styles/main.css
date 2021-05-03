@@ -13,7 +13,12 @@ header {
     padding: 20px;
 }
 
-a {
+.ul-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.article-list a {
     text-decoration: none;
     color: white;
 }
